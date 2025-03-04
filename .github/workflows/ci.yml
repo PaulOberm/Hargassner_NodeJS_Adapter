@@ -13,6 +13,7 @@ jobs:
     - uses: actions/checkout@v4
     - run: npm install eslint
     - run: npm run lint
+    - run: npx eslint index.js
 
   test:
     runs-on: ubuntu-latest
