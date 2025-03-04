@@ -13,14 +13,21 @@ jobs:
     - uses: actions/checkout@v4
     - run: npm install eslint
     - run: npm run lint
-    - run: npx eslint index.js
+    - run: npx eslint --max-warnings=3 index.js
 
-  test:
+  unittest:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
     - run: npm install
     - run: npm test
+  
+  integrationtest:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - run: npm install hargassner_telnet
+    - run: node test/TestWithIntegratedSocketServer.js
 
   build:
     runs-on: ubuntu-latest
