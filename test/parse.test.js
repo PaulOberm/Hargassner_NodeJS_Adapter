@@ -1,7 +1,9 @@
-const hargassner = require('hargassner_telnet')
-const boiler = new hargassner()
+const Hargassner = require('hargassner_telnet')
 
-test('cases', () => {
+test('Should create a JSON object from a input data string separated by empty spaces', () => {
+  const boiler = new Hargassner()
+
+  // Loads raw empty space separated input string and expected JSON data
   const cases = require('./cases.json')
 
   for (const { raw, parsed } of cases) {

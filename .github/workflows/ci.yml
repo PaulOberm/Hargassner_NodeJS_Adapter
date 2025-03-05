@@ -11,9 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    - run: npm install eslint
+    - run: npm install eslint textlint
     - run: npm run lint
     - run: npx eslint index.js
+    - run: npx textlint README.md
+
 
   unittest:
     runs-on: ubuntu-latest

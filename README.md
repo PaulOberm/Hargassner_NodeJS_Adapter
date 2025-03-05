@@ -90,12 +90,12 @@ npm install hargassner_telnet -g
 
 Das Paket beinhaltet das Kommandozeilenprogramm `hgboiler` um den aktuellen Stand des Heizkessels abzurufen.
 
-Im Ordern `./test` ist außerdem ein Beispielsprojekt hinterlegt, welches dieses Paket nutzt und die dekodierten Daten mittels Express Server zur Verfügung stellt.
-Hierzu wird eine Hargassner-Steuerung Emuliert.
+Im Ordner `./test` ist außerdem ein Beispielprojekt hinterlegt, welches dieses Paket nutzt und die dekodierten Daten mittels Express Webserver zur Verfügung stellt.
+Hierzu wird eine Hargassner-Steuerung emuliert.
 Der Express Webserver ist unter localhost:3000 und somit am Port 3000 zu erreichen.
 
 Anzeige der empfangen RAW-Daten mittels http://localhost:3000/raw.
-Die Dekodierten Daten können direkt mittels http://localhost:3000/ angezeigt werden.
+Die dekodierten Daten können direkt mittels http://localhost:3000/ angezeigt werden.
 
 ## API
 
@@ -146,8 +146,7 @@ im Object data ist das bereits geparste Datenpaket der Heizungssteuerung enthalt
 
 Für die Testversion ist weiter das Paket
 
-- Express
-  notwendig.
+- Express notwendig.
 
 ## Unterstützung
 
@@ -155,4 +154,4 @@ Jegliches Interesse an der Unterstützung dieses Projektes ist jederzeit willkom
 Einfach melden michael@grabenschweiger.com
 
 ## Lizenz
-Diese Projekt wird under der GPLv3-Lizenz veröffentlicht.
+Diese Projekt wird unter der GPLv3-Lizenz veröffentlicht.
