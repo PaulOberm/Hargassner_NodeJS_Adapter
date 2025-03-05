@@ -29,6 +29,13 @@ jobs:
     - run: npm install hargassner_telnet
     - run: sudo node test/TestWithIntegratedSocketServer.js
 
+  security:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - run: npm install
+    - run: npm audit --audit-level critical
+
   build:
     runs-on: ubuntu-latest
     strategy:

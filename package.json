@@ -29,7 +29,6 @@
         "lint"
     ],
     "dependencies": {
-        "hargassner_telnet": "^1.1.2",
         "stdio": "^2.1.1"
     },
     "devDependencies": {
@@ -39,7 +38,7 @@
         "eslint-plugin-node": "^11.1.0",
         "eslint-plugin-promise": "^4.2.1",
         "eslint-plugin-standard": "^4.0.1",
-        "jest": "^26.4.2",
-        "pre-commit": "^1.2.2"
+        "jest": "^29.7.0",
+        "pre-commit": "^1.0.10"
     }
 }
