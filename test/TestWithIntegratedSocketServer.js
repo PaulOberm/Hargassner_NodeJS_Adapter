@@ -22,6 +22,7 @@ Zentralheizung.connect()
 
 Zentralheizung.on('data', (data) => {
   console.log(data)
+  process.exit()
 })
 
 // Small example to get data with a Express Server
