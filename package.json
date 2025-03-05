@@ -29,6 +29,7 @@
         "lint"
     ],
     "dependencies": {
+        "hargassner_telnet": "^1.1.2",
         "stdio": "^2.1.1"
     },
     "devDependencies": {
