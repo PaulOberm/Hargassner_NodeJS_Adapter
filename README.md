@@ -8,7 +8,7 @@ Weiter Informationen zum Protokoll:
 2. https://www.mikrocontroller.net/attachment/345852/Hargassner_Datenprotokoll_155_Pakete.pdf
 
 Leider war von Seiten der Fa. Hargassner mittels Anfrage an deren Support keine Unterstützung möglich.
-Ich wurde auf die freigegeben MODBUS Schnittstelle verwiesen, welche jedoch kostenplichtig ist.
+Ich wurde auf die freigegebene MODBUS Schnittstelle verwiesen, welche jedoch kostenplichtig ist.
 
 ## Dekodierte Parameter
 
@@ -144,7 +144,7 @@ im Object data ist das bereits geparste Datenpaket der Heizungssteuerung enthalt
 
 - net-Package, welche bereits in der Standardinstallation von NodeJS global installiert ist
 
-Für die Testversion ist weiters das Paket
+Für die Testversion ist weiter das Paket
 
 - Express
   notwendig.
