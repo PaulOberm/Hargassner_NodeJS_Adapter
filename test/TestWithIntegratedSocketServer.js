@@ -14,6 +14,7 @@ var server = net.createServer(function (client) {
 })
 server.listen(23)
 
+// Deploys Hargassner package against mock server
 var Hargassner = require('hargassner_telnet')
 var Zentralheizung = new Hargassner({
   IP: 'localhost',
@@ -24,21 +25,26 @@ Zentralheizung.connect()
 
 Zentralheizung.on('data', (data) => {
   console.log(data)
+
+  // Comment this to test locally and view data in browser
   process.exit()
 })
 
 // Small example to get data with a Express Server
-// var PORT = 3000
-// var LISTENADRESS = '0.0.0.0'
+var PORT = 3000
+var LISTENADRESS = '0.0.0.0'
 
-// var express = require('express')
-// var app = express()
+var express = require('express')
+var app = express()
 
-// app.get('/', function (req, res) {
-//   res.send(Zentralheizung.data)
-// })
-// app.get('/raw', function (req, res) {
-//   res.send(Zentralheizung.raw)
-// })
+// View parsed data in local browser
+app.get('/', function (req, res) {
+  res.send(Zentralheizung.data)
+})
 
-// app.listen(PORT, LISTENADRESS)
+// View raw data in local browser
+app.get('/raw', function (req, res) {
+  res.send(Zentralheizung.raw)
+})
+
+app.listen(PORT, LISTENADRESS)

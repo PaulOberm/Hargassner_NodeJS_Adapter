@@ -2,7 +2,7 @@
 
 Adapter zur Kommunikation mit einem Heizkessel des Herstellers 'Hargassner' und dessen Steuerung 'Touch Control' mittels der nicht (offiziell) dokumentierten und freigegebenen Telnet Schnittstelle direkt am LAN Anschluss des Touch-Panel der Steuerung.
 
-Weiter Informationen zum Protokoll:
+Weitere Informationen zum Protokoll:
 
 1. https://www.mikrocontroller.net/topic/267831
 2. https://www.mikrocontroller.net/attachment/345852/Hargassner_Datenprotokoll_155_Pakete.pdf
@@ -68,7 +68,7 @@ Ich wurde auf die freigegebene MODBUS Schnittstelle verwiesen, welche jedoch kos
 
 ## Installation
 
-Um dieses Paket zu Installieren reicht ein einfaches
+Um dieses Paket zu installieren reicht ein einfaches
 
 ```
 npm install hargassner_telnet
@@ -142,7 +142,7 @@ im Object data ist das bereits geparste Datenpaket der Heizungssteuerung enthalt
 
 ## Abhängigkeiten
 
-- net-Package, welche bereits in der Standardinstallation von NodeJS global installiert ist
+- net-Package, welches bereits in der Standardinstallation von NodeJS global installiert ist
 
 Für die Testversion ist weiter das Paket
 
