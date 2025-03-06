@@ -30,7 +30,6 @@
     ],
     "dependencies": {
         "express": "^4.21.2",
-        "hargassner_telnet": "^1.1.2",
         "stdio": "^2.1.1",
         "textlint-filter-rule-allowlist": "^4.0.0",
         "textlint-rule-alive-link": "^0.1.2",
